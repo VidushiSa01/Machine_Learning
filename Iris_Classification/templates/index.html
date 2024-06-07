@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Prediction</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: rgb(22, 14, 22); /* Grey background */
+        color: #fff; /* Default text color */
+    }
+    
+    h1 {
+        text-align: center;
+        color: #fff; /* White color for headings */
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #44528abb; /* Semi-transparent grey for form background */
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #fff; /* White color for labels */
+    }
+    
+    input[type="text"] {
+        width: calc(100% - 10px);
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #2e7acb; /* Blue color for submit button */
+        color: #fff; /* White color for text */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker blue color on hover */
+    }
+    
+    h2 {
+        margin-top: 20px;
+        text-align: center; /* Center-align the heading */
+    }
+    
+    p {
+        text-align: center; /* Center-align the result */
+        color: #fff; /* White color for paragraph text */
+        font-size: 18px; /* Font size for the result */
+    }
+
+</style>    
+    
 </head>
 <body>
-    <h1>Flower Prediction</h1>
+    <h1>Iris Classification </h1>
     
     <form action="/predict" method="post">
         <label for="sepal_length">Sepal Length:</label>
